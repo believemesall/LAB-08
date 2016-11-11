@@ -50,6 +50,7 @@ Line 5
 Line 2
 Line 9
 ```
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.PNG">
 ###1.1.2. try…catch…finally
 ประโยค ```try…catch…finally``` ใช้สำหรับการดักจับและจัดการข้อผิดพลาดของโปรแกรม ทั้งขณะทำงาน (Run Time Process) หรือในขณะเริ่มต้นทำงาน (Init Process) โดยเราจะวางคำสั่งที่คาดการว่าจะเกิดข้อผิดพลาดขึ้นไว้ในบล็อกของ ```Try``` และวางส่วนจัดการข้อผิดพลาดไว้ในบล็อกของ ```catch``` และถ้ามีการดำเนินการใดๆ ที่ต้องทำทั้งในกรณีที่มีและไม่มีข้อผิดพลาด ก็จะใส่ไว้ในบล็อกของ ```Finally``` ในคำสั่งนี้สามารถเขียนบล็อกของ ```catch``` ได้หลายบล็อก คำสั่งนี้มีประโยชน์มากในการทำงานกับระบบอินเตอร์เน็ต โดยเฉพาะในกรณีที่การเชื่อมต่อไม่เสถียร เพราะจะช่วยป้องกันการค้างของโปรแกรมของเราขณะเรียกข้อมูลจาก network ได้
 **ตัวอย่าง** โปรแกรมที่ไม่ได้ใช้คำสั่ง ```try…catch…finally```
@@ -65,6 +66,7 @@ public class TryCatch
 }
 ```
 **ผลที่ได้**
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.1.PNG">
 
 โปรแกรมจะค้างและปรากฏข้อความต่อไปนี้บนหน้าจอ
 ```
@@ -97,6 +99,7 @@ public class TryCatch
  }
 ```
 **ผลที่ได้**
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.2.PNG">
 โปรแกรมทำงานได้ตามปกติ และปรากฏ ข้อความต่อไปนี้ โดยที่ข้ามคำสั่งบรรทัดที่ 10
 ```
 Error, null object assignment.
@@ -143,6 +146,7 @@ public class TryCatch
      }
  }
 ```
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.3.PNG">
 ###2.
 ``` csharp
 using System;
@@ -157,6 +161,7 @@ public class TryCatch
      }
  }
 ```
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.4.PNG">
 ###3.
 ``` csharp
 using System;
@@ -173,6 +178,7 @@ public class TryCatch
      }
  }
 ```
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.5.PNG">
 ###1.1.3. คำสั่ง ```throw```
 
 คำสั่ง ```throw``` ใช้เพื่อเปลี่ยนเส้นทางการทำงานของโปรแกรมโดยเจาะจง exception เป้าหมาย
@@ -242,6 +248,16 @@ public class ExceptionLearning
     }
  }
 ````
+#ตอบ
+1
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.6.PNG">
+2
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.7.PNG">
+3
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.8.PNG">
+4
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.9.PNG">
+
 
 ###เรื่องของ exception นี้ศึกษาเพิ่มเติมได้ [ที่นี่](http://msdn.microsoft.com/en-us/library/vstudio/2w8f0bss%28v=vs.100%29.aspx)
 
@@ -307,6 +323,12 @@ execute next line
 2.	ถ้าค่าที่ผู้ใช้ป้อน น้อยกว่า ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Too Low, You loss!!”```ออกทางหน้าจอ
 3.	ถ้าค่าที่ผู้ใช้ป้อน เท่ากับ ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Okay, You win!!”``` ออกทางหน้าจอ
 
+
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.10.PNG">
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.11.PNG">
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.12.PNG">
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.13.PNG">
+
 ###1.2.2.	คำสั่ง ```if…else```
 
 เงื่อนไขที่เป็นไปได้ของคำสั่งในการตัดสินใจมีสองทางเสมอ (true และ false) ที่ผ่านมา เราจะเห็นว่า คำสั่ง if เป็นคำสั่งที่เลือกทำเพียงทางเดียว (เฉพาะในกรณีที่เงื่อนไขเป็น true เท่านั้น) หากต้องการให้โปรแกรมทำงานทั้งกรณีที่เงื่อนไขเป็น true และ false เราต้องใช้คำสั่ง if…else โดยมีรูปแบบดังนี้
@@ -350,6 +372,10 @@ execute this line
 this line is always execute
 ```
 **การทดลอง**
+
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.14.PNG">
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.15.PNG">
+
 
 ให้เขียนโปรแกรมสุ่มตัวเลข (จากใบงานที่ 7) แล้วใช้คำสั่ง ```if…else``` โดยมีเงื่อนไขต่อไปนี้
 
@@ -445,7 +471,9 @@ Grade C
 50-54|	D
 0-49|	F
 
-3. รูปแบบการพิมพ์คือ score: [sss] grade: [gg] เมื่อ sss คือคะแนน และ gg คือ เกรดที่ได้
+1. รูปแบบการพิมพ์คือ score: [sss] grade: [gg] เมื่อ sss คือคะแนน และ gg คือ เกรดที่ได้
+
+<img src ="https://github.com/believemesall/LAB-08/blob/master/LAB8.16.PNG">
 
 ###1.2.5. คำสั่ง ```switch```
 
@@ -524,6 +552,8 @@ fri|	Friday	|Blue
 sat|	Saturday	|Purple
 อื่นๆ|	 ---|	---
 
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.18.PNG">
+<img src = "https://github.com/believemesall/LAB-08/blob/master/LAB8.17.PNG">
 
 ##Reference
 เนื้อหาในส่วนนี้เป็นอ้างอิงสำหรับการเขียนโปรแกรม
